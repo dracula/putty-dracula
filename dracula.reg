@@ -1,34 +1,162 @@
 Windows Registry Editor Version 5.00
 
+; Putty Theme Dracula
+; Scheme author: clach04
+; scheme-comment:  based on https://spec.draculatheme.com/#sec-ANSI
+; scheme-comment1: Straight mapping of ANSI values from specification as of 2024 (last updated 2021)
+; scheme-comment2: Reference https://github.com/dracula/dracula-theme
+; scheme-comment3: Referencs https://github.com/dracula/spec/blob/master/dracula-spec.md
+; scheme-comment4: Unused: Selection : #44475A
+; scheme-comment5: Unused: Orange : #FFB86C
+; scheme-comment6: Source for https://github.com/clach04/dracula_putty
 [HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\Dracula]
-"Xterm256Colour"=dword:00000001
-"BoldAsColour"=dword:00000000
+
+; Default Foreground
+;  Colour0-comment: Default Foreground
+;     Colour0-note: Dracula Foreground
+;          Colour0: #f8f8f2
 "Colour0"="248,248,242"
+
+; Default Bold Foreground  -- equals to non-bold
+;  Colour1-comment: Default Bold Foreground  -- equals to non-bold
+;     Colour1-note: Dracula Foreground
+;          Colour1: #f8f8f2
 "Colour1"="248,248,242"
+
+; Default Background
+;  Colour2-comment: Default Background
+;     Colour2-note: Dracula Background
+;          Colour2: #282a36
 "Colour2"="40,42,54"
-"Colour3"="32,34,43"
-"Colour4"="0,0,0"
-"Colour5"="255,121,198"
-"Colour6"="0,0,0"
-"Colour7"="85,85,85"
+
+; Default Bold Background  -- equals to non-bold
+;  Colour3-comment: Default Bold Background  -- equals to non-bold
+;     Colour3-note: 
+;          Colour3: #282a36
+"Colour3"="40,42,54"
+
+; Cursor Text -- equals to default background
+;  Colour4-comment: Cursor Text -- equals to default background
+;     Colour4-note: 
+;          Colour4: #282a36
+"Colour4"="40,42,54"
+
+; Cursor Colour -- equals to default foreground
+;  Colour5-comment: Cursor Colour -- equals to default foreground
+;     Colour5-note: Dracula Foreground
+;          Colour5: #f8f8f2
+"Colour5"="248,248,242"
+
+; ANSI Black
+; 30m / 40m
+;  Colour6-comment: ANSI Black - 30m / 40m
+;     Colour6-note: 
+;          Colour6: #21222c
+"Colour6"="33,34,44"
+
+; ANSI Black Bright
+; 1;30m
+;  Colour7-comment: ANSI Black Bright - 1;30m
+;     Colour7-note: Same as Dracula Comment
+;          Colour7: #6272a4
+"Colour7"="98,114,164"
+
+; ANSI Red
+; 31m / 41m
+;  Colour8-comment: ANSI Red - 31m / 41m
+;     Colour8-note: Dracula Red
+;          Colour8: #ff5555
 "Colour8"="255,85,85"
-"Colour9"="255,45,45"
+
+; ANSI Red Bright
+; 1;31m
+;  Colour9-comment: ANSI Red Bright - 1;31m
+;     Colour9-note: 
+;          Colour9: #ff6e6e
+"Colour9"="255,110,110"
+
+; ANSI Green
+; 32m / 42m
+; Colour10-comment: ANSI Green - 32m / 42m
+;    Colour10-note: Dracula Green
+;         Colour10: #50fa7b
 "Colour10"="80,250,123"
-"Colour11"="30,249,85"
+
+; ANSI Green Bright
+; 1;32m
+; Colour11-comment: ANSI Green Bright - 1;32m
+;    Colour11-note: 
+;         Colour11: #69ff94
+"Colour11"="105,255,148"
+
+; ANSI Yellow
+; 33m / 43m
+; Colour12-comment: ANSI Yellow - 33m / 43m
+;    Colour12-note: Dracula Yellow
+;         Colour12: #f1fa8c
 "Colour12"="241,250,140"
-"Colour13"="237,249,98"
-"Colour14"="139,233,253"
-"Colour15"="108,227,253"
-"Colour16"="189,147,249"
-"Colour17"="167,114,248"
-"Colour18"="0,217,217"
-"Colour19"="200,240,240"
+
+; ANSI Yellow Bright
+; 1;33m
+; Colour13-comment: ANSI Yellow Bright - 1;33m
+;    Colour13-note: 
+;         Colour13: #ffffa5
+"Colour13"="255,255,165"
+
+; ANSI Blue
+; 34m / 44m
+; Colour14-comment: ANSI Blue - 34m / 44m
+;    Colour14-note: Dracula Purple
+;         Colour14: #bd93f9
+"Colour14"="189,147,249"
+
+; ANSI Blue Bright
+; 1;34m
+; Colour15-comment: ANSI Blue Bright - 1;34m
+;    Colour15-note: 
+;         Colour15: #d6acff
+"Colour15"="214,172,255"
+
+; ANSI Magenta
+; 35m / 45m
+; Colour13-comment: ANSI Yellow Bright - 1;33m
+;    Colour13-note: 
+;         Colour13: #ffffa5
+"Colour13"="255,255,165"
+
+; ANSI Magenta Bright
+; 1;35m
+; Colour17-comment: ANSI Magenta Bright - 1;35m
+;    Colour17-note: 
+;         Colour17: #ff92df
+"Colour17"="255,146,223"
+
+; ANSI Cyan
+; 36m / 46m
+; Colour18-comment: ANSI Cyan - 36m / 46m
+;    Colour18-note: Dracula Cyan
+;         Colour18: #8be9fd
+"Colour18"="139,233,253"
+
+; ANSI Cyan Bright
+; 1;36m
+; Colour19-comment: ANSI Cyan Bright - 1;36m
+;    Colour19-note: 
+;         Colour19: #a4ffff
+"Colour19"="164,255,255"
+
+; ANSI White
+; 37m / 47m
+; Colour20-comment: ANSI White - 37m / 47m
+;    Colour20-note: Dracula Foreground
+;         Colour20: #f8f8f2
 "Colour20"="248,248,242"
-"Colour21"="255,255,255"
-"LineCodePage"="UTF-8"
-"UseSystemColours"=dword:00000000
-"FontHeight"=dword:00000009
-"FontIsBold"=dword:00000000
-"Font"="Consolas"
-"Beep"=dword:00000002
-"BeepInd"=dword:00000000
+
+; ANSI White Bright
+; 1;37m
+; Colour20-comment: ANSI White - 37m / 47m
+;    Colour20-note: Dracula Foreground
+;         Colour20: #f8f8f2
+"Colour20"="248,248,242"
+
+; {{! Theme rendered with https://github.com/clach04/terminal_style_toolkit }}
